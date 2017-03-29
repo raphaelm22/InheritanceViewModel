@@ -1,0 +1,13 @@
+﻿@model Sample1.ViewModels.Order.PaymentByGoldViewModel
+
+<div class="row">
+    <div class="col-xs-12 form-group">
+        <label asp-for="AccountId"></label>
+        <input type="text" asp-for="AccountId" class="form-control" />
+    </div>
+    <div class="col-xs-12 form-group">
+        <label asp-for="AccountToken"></label>
+        <input type="text" asp-for="AccountToken" class="form-control" />
+        <span class="help-block small">Must end with 9</span>
+    </div>
+</div>

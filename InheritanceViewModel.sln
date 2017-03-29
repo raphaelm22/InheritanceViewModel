@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "InheritanceViewModel", "src\InheritanceViewModel\InheritanceViewModel.xproj", "{144CE025-138F-4F21-9672-BE148D1752AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{78700341-775B-4523-AD87-193AE9E50B8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{1A0276EC-D1B8-4BA5-B035-4972A36A0F38}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Sample1", "sample\Sample1\Sample1.xproj", "{3ECC7B33-752D-499F-A507-6DC6AE852D03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1B953C99-7417-4AD7-9058-7A16DD5314EF}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{144CE025-138F-4F21-9672-BE148D1752AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{144CE025-138F-4F21-9672-BE148D1752AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{144CE025-138F-4F21-9672-BE148D1752AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{144CE025-138F-4F21-9672-BE148D1752AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ECC7B33-752D-499F-A507-6DC6AE852D03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ECC7B33-752D-499F-A507-6DC6AE852D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ECC7B33-752D-499F-A507-6DC6AE852D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ECC7B33-752D-499F-A507-6DC6AE852D03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{144CE025-138F-4F21-9672-BE148D1752AF} = {78700341-775B-4523-AD87-193AE9E50B8C}
+		{3ECC7B33-752D-499F-A507-6DC6AE852D03} = {1A0276EC-D1B8-4BA5-B035-4972A36A0F38}
+	EndGlobalSection
+EndGlobal

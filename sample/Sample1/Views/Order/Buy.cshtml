@@ -1,0 +1,45 @@
+﻿@model Sample1.ViewModels.Order.OrderViewModel
+
+<h2>Product Info</h2>
+<div class="row">
+    <div class="col-md-3">
+        <img class="img-responsive" src="~/images/product_@(Model.Product.Id).png" />
+    </div>
+    <div class="col-md-9">
+        <h3>@Model.Product.Name</h3>
+        @if (Model.Product.CostType == Sample1.Models.Common.ECostType.Dollar)
+        {
+            <span>Cost: <strong>$@Model.Product.Cost.ToString("N2")</strong> <small>(Dollars)</small></span>
+        }
+        else
+        {
+            <span>Cost: <strong>G$@Model.Product.Cost.ToString("N2")</strong> <small>(Gold)</small></span>
+        }
+    </div>
+</div>
+
+
+<h2>Payment using your @Model.Payment.PaymentType</h2>
+
+<div class="row">
+    @Html.ValidationSummary()
+</div>
+
+<form asp-controller="Order" asp-action="Buy">
+    <input type="hidden" asp-for="Product.Id" />
+
+    @{
+        var paymentViewData = new ViewDataDictionary(ViewData);
+        paymentViewData.TemplateInfo.HtmlFieldPrefix = Html.NameFor(m => m.Payment);
+
+        <input asp-for="Payment.PaymentType" type="hidden" />
+        @Html.Partial($"_PaymentBy{Model.Payment.PaymentType}Form", Model.Payment, paymentViewData)
+    }
+
+    <div class="row">
+        <div class="col-xs-12">
+            <button type="submit" class="btn btn-primary">Continue</button>
+        </div>
+        
+    </div>
+</form>

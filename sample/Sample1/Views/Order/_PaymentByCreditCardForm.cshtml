@@ -1,0 +1,13 @@
+﻿@model Sample1.ViewModels.Order.PaymentByCreditCardViewModel
+
+<div class="row">
+    <div class="col-xs-12 form-group">
+        <label asp-for="CardOwnerName"></label>
+        <input type="text" asp-for="CardOwnerName" class="form-control" />
+    </div>
+    <div class="col-xs-12 form-group">
+        <label asp-for="CardNumber"></label>
+        <input type="text" asp-for="CardNumber" class="form-control" maxlength="16" />
+        <span class="help-block small">Must end with 0</span>
+    </div>
+</div>
